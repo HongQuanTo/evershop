@@ -43,12 +43,12 @@ module.exports.start = async function start(cb) {
   process.env.ALLOW_CONFIG_MUTATIONS = false;
 
   /** Migration */
-  try {
-    await migrate(modules);
-  } catch (e) {
-    error(e);
-    process.exit(0);
-  }
+  // try {
+  //   await migrate(modules);
+  // } catch (e) {
+  //   error(e);
+  //   process.exit(0);
+  // }
 
   /**
    * Get port from environment and store in Express.
